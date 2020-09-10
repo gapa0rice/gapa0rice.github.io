@@ -90,6 +90,78 @@ main section {
   padding: 40px;
 }
 
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.text-underline {
+  position: relative;
+  border-top: 1px solid #c2c2c2;
+  margin-bottom: 16px;
+}
+
+/*共通のstyle*/
+.text-underline::before,
+.text-underline::after {
+  position: absolute;
+  bottom: 0px;
+  width: 0px;
+  height: 1px;
+  content: "";
+  background-color: #cde684;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+/*中央から右へのアニメーション*/
+.text-underline::before {
+  left: 50%;
+}
+
+/*中央から左へのアニメーション*/
+.text-underline::after {
+  right: 50%;
+}
+
+input:focus + .text-underline::before,
+input:focus + .text-underline::after {
+  width: 50%;
+}
+
+button {
+  padding: 8px 32px;
+  border-radius: 28px;
+  border: 2px solid #cde684;
+  background: #fff;
+  color: #b2c579;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #cde684;
+  color: #fff;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  color: #c7dc89;
+  margin: 0 4px;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #e7c189;
+  text-decoration: none;
+}
+
 .answer {
   position: relative;
   margin: 60px 0;
