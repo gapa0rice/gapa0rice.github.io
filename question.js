@@ -3,7 +3,7 @@ $(function() {
     const questionId = $(this)
       .parent()
       .attr("id");
-    const answers = ["2019-12-25"];
+    const answers = ["2019-12-25", "マフラー", "ヴィーナス"];
     console.log("s");
     if ($("#" + questionId + ".question input").val() == answers[questionId]) {
       console.log("正解！");
