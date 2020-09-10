@@ -1,40 +1,167 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./question.js"></script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>HBD</title>
+  </head>
 
-  <title>HBD</title>
-</head>
-
-<body>
-  <header></header>
-  <main>
+  <body>
     <section id="loaded">
       <p class="text">This page is ...</p>
     </section>
     <section id="top">
-      <h1 class="hbd">HAPPY<br>BIRTHDAY</h1>
+      <h1 class="hbd">HAPPY<br />BIRTHDAY</h1>
     </section>
-  </main>
-  <footer></footer>
+    <main>
+      <div class="container bg-white">
+        <section>
+          <h1 class="title">~本日の行き先~</h1>
+          <div class="text-center">
+            <div id="0" class="question">
+              <p>1. 私たちが付き合った年月日を答えてください(Y-m-dの形で)。</p>
+              <input type="text" />
+              <div class="text-underline"></div>
+              <button>決定</button>
+              <p class="miss text-danger d-none mt-5">
+                は？間違えるなんてありえない！！！！！
+              </p>
+              <div class="correct mt-5 d-none">
+                <h1>正解！本日の行き先は、、、！</h1>
+                <div class="row answer">
+                  <img
+                    class="col-12"
+                    src="https://i.pinimg.com/originals/26/50/07/2650078118818c39dac3d163bc53d566.jpg"
+                    alt=""
+                  />
+                  <p>横浜です！！</p>
+                </div>
+                <p>
+                  まずは<a href="https://www.yim.co.jp/happy/" target="_blank"
+                    >横浜ワールドポーターズ</a
+                  >に行って<a
+                    href="https://www.yim.co.jp/gourmetguide/"
+                    target="_blank"
+                    >お昼ご飯</a
+                  >を食べます！
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h1 class="title">~次に行くところ~</h1>
+          <div class="text-center">
+            <div id="1" class="question">
+              <p>
+                2.
+                隼兵は妙典でお寿司を食べた後、駐車場代のためにあるものを書いました。それは一体何だったでしょう。
+              </p>
+              <input type="text" />
+              <div class="text-underline"></div>
+              <button>決定</button>
+              <p class="miss text-danger d-none mt-5">
+                覚えてないか〜〜
+              </p>
+              <div class="correct mt-5 d-none">
+                <h1>正解！次に行くのは、、、！</h1>
+                <div class="row answer">
+                  <img
+                    class="col-12"
+                    src="https://static.yukoyuko.net/photo/7532/bath/a0L6F00001GoBz8UAF/1/0001_600.jpg"
+                    alt=""
+                  />
+                  <p>万葉倶楽部です！！</p>
+                </div>
+                <p>
+                  まずは<a
+                    href="https://mb.vscrm.net/2ILN35N4/login.xhtml"
+                    target="_blank"
+                    >ここから</a
+                  >会員登録を。<br />予約内容は<a
+                    href="https://www.manyo.co.jp/mm21/coupon/couple-sp/"
+                    target="_blank"
+                    >これ</a
+                  >！
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h1 class="title">~泊まるところ~</h1>
+          <div class="text-center">
+            <div id="2" class="question">
+              <p>
+                3.
+                初デートのお台場で隼兵がなかなか覚えられなかったショッピングセンターの名前は
+                ○○○ フォートでしょう。
+              </p>
+              <input type="text" />
+              <div class="text-underline"></div>
+              <button>決定</button>
+              <p class="miss text-danger d-none mt-5">
+                もう忘れちゃった？笑
+              </p>
+              <div class="correct mt-5 d-none">
+                <h1>正解！今日泊まるのは、、、！</h1>
+                <div class="row answer">
+                  <img
+                    class="col-12"
+                    src="https://cache.4travel.jp/img/thumbnails/magazine/article/custom_picture/3142.jpg?1540285565"
+                    alt=""
+                  />
+                  <p>横浜ロイヤルパークホテルです！！</p>
+                </div>
+                <p>
+                  <a href="https://www.yrph.com/stay/" target="_blank"
+                    >横浜ロイヤルパークホテル</a
+                  >について。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
