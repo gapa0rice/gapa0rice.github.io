@@ -23,19 +23,48 @@
       href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./question.js"></script>
 
     <title>HBD</title>
   </head>
 
   <body>
     <header></header>
+    <section id="loaded">
+      <p class="text">This page is ...</p>
+    </section>
+    <section id="top">
+      <h1 class="hbd">HAPPY<br />BIRTHDAY</h1>
+    </section>
     <main>
-      <section id="loaded">
-        <p class="text">This page is ...</p>
-      </section>
-      <section id="top">
-        <h1 class="hbd">HAPPY<br />BIRTHDAY</h1>
-      </section>
+      <div class="container bg-white">
+        <section id="second">
+          <h1 class="title">~旅行プラン~</h1>
+          <div class="text-center">
+            <p>本日の行き先は、、、！<br />おっと、その前にクイズです！</p>
+            <div id="0" class="question">
+              <p>1. 私たちが付き合った年月日を答えてください(Y-m-dの形で)。</p>
+              <input type="text" />
+              <button>決定</button>
+              <p class="miss text-danger d-none mt-5">
+                は？間違えるなんてありえない！！！！！
+              </p>
+              <div class="correct mt-5 d-none">
+                <h1>正解！本日の行き先は、、、！</h1>
+                <div class="row answer">
+                  <img
+                    class="col-12"
+                    src="https://i.pinimg.com/originals/26/50/07/2650078118818c39dac3d163bc53d566.jpg"
+                    alt=""
+                  />
+                  <p>横浜です！！レッツゴ〜！</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer></footer>
 
